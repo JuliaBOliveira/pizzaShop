@@ -5,3 +5,21 @@
     color: var(--ion-color-primary);
   }
 }
+
+ion-accordion ion-list[slot="content"] {
+  ion-item {
+    --padding-start: 72px;
+  }
+}
+
+@media (min-width: 768px) {
+  ion-router-outlet {
+    margin-top: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+  ion-router-outlet {
+    margin-top: calc(var(--ion-safe-area-top) + var(--header-height));
+  }
+}
